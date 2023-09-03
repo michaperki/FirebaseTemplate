@@ -4,9 +4,8 @@ import { registerUser } from '../../services/api';
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
     email: '',
+    password: '',
   });
 
   const handleRegister = async () => {
@@ -29,11 +28,11 @@ const Register = () => {
       <h2>Register</h2>
       <form>
         <div>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="email">Email:</label>
           <input
-            type="text"
-            name="username"
-            value={formData.username}
+            type="email"
+            name="email"
+            value={formData.email}
             onChange={handleInputChange}
           />
         </div>
@@ -43,15 +42,6 @@ const Register = () => {
             type="password"
             name="password"
             value={formData.password}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
             onChange={handleInputChange}
           />
         </div>
