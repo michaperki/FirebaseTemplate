@@ -15,6 +15,18 @@ To use this template, run
     git push -u origin master
 
     # install dependencies
-    cd frontend && npm install
+    cd frontend && npm install && cd ..
 
-    cd ../backend %% pip install -r requirements.txt
+    # start frontend React app
+    cd frontend && npm start
+
+    # start backend virtual environment
+    cd backend && source venv/bin/activate
+
+    # install backend dependencies
+    cd backend %% pip install -r requirements.txt && cd ..
+
+    
+    $ start backend Flask server
+    cd backend && python run.py
+
