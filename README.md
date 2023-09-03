@@ -25,7 +25,6 @@ To use this template, run
 
     # install backend dependencies
     cd backend %% pip install -r requirements.txt && cd ..
-
     
     $ start backend Flask server
     cd backend && python run.py
