@@ -13,3 +13,8 @@ To use this template, run
 
     # push your code
     git push -u origin master
+
+    # install dependencies
+    cd frontend && npm install
+
+    cd ../backend %% pip install -r requirements.txt
