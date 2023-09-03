@@ -1,5 +1,5 @@
-### TemplateApp
-## Flask + React
+### Firebase Template App
+## Flask + React + Firebase
 
 # Usage
 To use this template, run 
